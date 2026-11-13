@@ -27,7 +27,7 @@ jobs:
 
       - name: Extract Android project
         run: |
-          unzip -q MusicNoteMaker_Android_Project.zip -d project
+          unzip -q "MusicNoteMaker_Android_Project(3).zip" -d project
 
       - name: Build APK
         run: gradle -p project assembleDebug
