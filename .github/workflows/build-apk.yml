@@ -26,10 +26,8 @@ jobs:
           gradle-version: '8.7'
 
       - name: Extract Android project
-        run: |
-          unzip -q 'MusicNoteMaker_Android_Project(3).zip' -d project
-      - name: Build APK
-        run: gradle -p project assembleDebug
+        run: |unzip -q "MusicNoteMaker_Android_Project(3).zip" -d project
+           assembleDebug
 
       - name: Save APK
         uses: actions/upload-artifact@v4
